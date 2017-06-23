@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3 class="section-title">Biểu mẫu tạo quảng cáo</h3>
+            </div>
+        </div>
+    </div>
+    <section class="section-ads-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form>
+                        <!--ads-infomation-->
+                        <h3>THÔNG TIN QUẢNG CÁO</h3>
+                        <div class="form-group offer-type">
+                            <label class="text-box-title-label">Tôi muốn</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn loại quảng cáo<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>Mua DASH</a></li>
+                                            <li><a>Bán DASH</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                            </div>
+                        </div>
+                        <!--offer-type-->
+                        <div class="form-group price">
+                            <label class="text-box-title-label">Giá</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group col-sm-8 addon-input">
+                                        <input type="text" id="quantityDash" name="quantityDash" class="form-control text-box" placeholder="" aria-describedby="basic-addon2">
+                                        <span class="input-group-addon">VND</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Giá 1 bitUSD theo VND</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--price-->
+                        <div class="form-group price-for-maker">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label class="text-box-title-label">Giá BTC bạn thực trả</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="text-box-title-label">55,897,649 VND / BTC</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Đây là giá tương ứng với tỉ giá BTC/bitUSD hiện tại (2467). Giá sẽ biến động khi tỉ giá DASH/bitUSD thay đổi.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--price-for-maker-->
+                        <div class="form-group price-for-taker">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label class="text-box-title-label">Giá BTC người bán thấy</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="text-box-title-label">55,897,649 VND / BTC</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Giá đã bao gồm phí giao dịch do người bán chịu.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--price-for-taker-->
+                        <div class="form-group currency">
+                            <label class="text-box-title-label">Đơn vị tiền tệ</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group col-sm-8 addon-input">
+                                        <input type="text" id="quantityDash" name="quantityDash" class="form-control text-box" placeholder="" aria-describedby="basic-addon2">
+                                        <span class="input-group-addon">VND</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Đơn vị tiền tệ để đổi lấy BTC</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--currency-->
+                        <div class="form-group min-amount">
+                            <label class="text-box-title-label">Số tiền tối thiểu</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group col-sm-8 addon-input">
+                                        <input type="text" id="quantityDash" name="quantityDash" class="form-control text-box" placeholder="" aria-describedby="basic-addon2">
+                                        <span class="input-group-addon">DASH</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Hạn mức giao dịch tối thiểu trong một giao dịch. (Ít nhất là 0.02 DASH)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--min-amount-->
+                        <div class="form-group max-amount">
+                            <label class="text-box-title-label">Số tiền tối đa</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group col-sm-8 addon-input">
+                                        <input type="text" id="quantityDash" name="quantityDash" class="form-control text-box" placeholder="" aria-describedby="basic-addon2">
+                                        <span class="input-group-addon">DASH</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Hạn mức giao dịch tối đa trong một giao dịch. Nếu bạn là người bán, số dư trong ví BTC bạn có thể giới hạn lượng giao dịch
+                                    tối đa. (Tối đa là 100 DASH)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--max-amount-->
+                        <div class="form-group min-btc-price">
+                            <label class="text-box-title-label">Giá DASH tối thiểu</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="input-group col-sm-8 addon-input">
+                                        <input type="text" id="quantityDash" name="quantityDash" class="form-control text-box" placeholder="" aria-describedby="basic-addon2">
+                                        <span class="input-group-addon">VND</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Giá tối đa bạn muốn trả cho 1 DASH (tính theo VND)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--min-btc-price-->
+                        <div class="form-group reference-exchange">
+                            <label class="text-box-title-label">Sàn giao dịch tham khảo</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn loại quảng cáo<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>Bitstamp (Blockchain)</a></li>
+                                            <li><a>Bitfinex</a></li>
+                                            <li><a>BTC-e</a></li>
+                                            <li><a>Kraken EUR</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Sàn giao dịch được dùng để cập nhập giá cho quảng cáo của bạn</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--reference-exchange-->
+                        <div class="form-group payment-time">
+                            <label class="text-box-title-label">Thời gian cho phép thanh toán</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn thời gian thanh toán<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>15</a></li>
+                                            <li><a>30</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Nếu người mua không hoàn thành thanh toán trong thời gian này, giao dịch sẽ bị huỷ tự động</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--payment-time-->
+                        <div class="form-group location">
+                            <label class="text-box-title-label">Vị trí</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn vị trí hiện tại<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>15</a></li>
+                                            <li><a>30</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                            </div>
+                        </div>
+                        <!--location-->
+                        <!--payment-infomation-->
+                        <h3>THÔNG TIN THANH TOÁN</h3>
+                        <div class="form-group payment-method">
+                            <label class="text-box-title-label">Phương thức thanh toán</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn phương thức thanh toán<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>Chuyển khoản ngân hàng</a></li>
+                                            <li><a>Nộp tiền mặc vào tài khoản</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="description-label">Phương thức thanh toán cho quảng cáo này</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--payment-method-->
+                        <div class="form-group bank-name">
+                            <label class="text-box-title-label">Tên ngân hàng</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Chọn ngân hàng<span class="caret"></span>
+                                    </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a>Chuyển khoản ngân hàng</a></li>
+                                            <li><a>Nộp tiền mặc vào tài khoản</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--bank-name-->
+                        <div class="form-group bank-account-number">
+                            <label class="text-box-title-label">Số tài khoản</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control text-box">
+                                </div>
+                                <div class="col-md-5">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--bank-account-number-->
+                        <div class="form-group bank-account-name">
+                            <label>Tên tài khoản</label>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control text-box">
+                                </div>
+                                <div class="col-md-5">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--bank-account-name-->
+                        <button class="btn continue-btn btn-primary btn-create">TẠO</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- /.page-content -->
+
+<footer></footer>

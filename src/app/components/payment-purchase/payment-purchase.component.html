@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <section class="step-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="app-step-nav">
+                        <app-step-nav [items]="navItems"></app-step-nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.step-nav -->
+    <section class="payment-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info info-container">
+                        <p>Bạn đang mua <strong>0.77 DASH</strong> cho <strong>HaoLe</strong>. DASH khoá lại để đảm bảo cho
+                            giao dịch này. Vui lòng thanh toán rồi xác nhận dưới đây</p>
+                        <div class="work-break">
+                            <p>Sau khi giao dịch hoàn tất, DASH của bạn sẽ được chuyển vào: <strong>DVJKSFNDJSKNDJKDKJWELALVJSHFGKJNVDJNVJD</strong></p>
+                        </div>
+                    </div>
+                    <!-- /.info-container -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-danger payment-timer" role="alert">
+                        <h4>Thời gian còn lại để thanh toán</h4>
+                        <h1>11:59:39</h1>
+                        <p><i>Hết thời gian thanh toán giao dịch sẽ bị huỷ và chúng tôi sẽ gởi DASH trả lại cho người bán</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <button class="btn btn-lg btn-darkblue btn-primary btn-done" (click)="onPaymentDoneButtonClicked()">TÔI ĐÃ GỞI ĐỦ TIỀN</button>
+                </div>
+                <div class="col-lg-6">
+                    <button class="btn btn-lg btn-alternative btn-alternative-red btn-cancel">HUỶ BỎ GIAO DỊCH</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-info-container">
+                        <h3 class="section-title">Thông tin thanh toán</h3>
+                        <div class="ads-info">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Phương thức thanh toán</td>
+                                        <td class="text-box-title-label" width="60%">Chuyển khoản ngân hàng</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Số tiền phải trả</td>
+                                        <td class="text-box-title-label" width="60%">58,249,799 VND</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Tên ngân hàng</td>
+                                        <td class="text-box-title-label" width="60%">Vietcombank</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Tên tài khoản</td>
+                                        <td class="text-box-title-label" width="60%">LE THIEN HAO</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Số tài khoản</td>
+                                        <td class="text-box-title-label" width="60%">0291000322789</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Nội dung chuyển khoản</td>
+                                        <td class="text-box-title-label" width="60%">haole mua DASH tu minhnn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-box-title-label" width="40%" colspan="2">
+                                            <p><i>Vui lòng gởi đúng số tiền và ghi chú như trên để giao dịch được xử lý nhanh chóng. Lưu ý:  Người gởi phải chịu phí ngân hàng</i></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--payment info-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-info-container">
+                        <h3 class="section-title">Ví DASH của bạn</h3>
+                        <div class="ads-info">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Ví DASH</td>
+                                        <td class="text-box-title-label" width="60%">
+                                            <div class="work-break">DVJKSFNDJSKNDJKDKJWELALVJSHFGKJNVDJNVJD</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-box-title-label" width="40%" colspan="2">
+                                            <p><i>Vui lòng kiểm tra lại ví DASH này để chắc chắn rằng đó là ví của bạn. Nếu máy tính của bạn bị nhiễm virus nó có thể thay đổi ví DASH khi bạn chép từ trình quản lý DASH</i></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--payment wallet -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-info-container">
+                        <h3 class="section-title">Tóm lược về minhnn</h3>
+                        <div class="ads-info">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Đã giao dịch</td>
+                                        <td class="text-box-title-label" width="60%">1234.5 DASH</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Lần truy cập cuối</td>
+                                        <td class="text-box-title-label" width="60%">một phút trước</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Xác minh thân nhân và cư trú</td>
+                                        <td class="text-box-title-label" width="60%">Đã xác minh</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Facebook</td>
+                                        <td class="text-box-title-label" width="60%">Chưa xác minh</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="info-title-label" width="40%">Twitter</td>
+                                        <td class="text-box-title-label" width="60%">Chưa xác minh</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--seller infomation -->
+        </div>
+    </section>
+    <!-- /.payment-info -->
+</div>
+<!-- /.page-content -->
+
+<footer></footer>
+<!---->

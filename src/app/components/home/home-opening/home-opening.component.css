@@ -1,0 +1,81 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.container-fluid {
+    background-image: url("../../../../assets/images/intro-background.png")
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+section.opening h4.opening-title {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 130px auto 20px auto;
+}
+
+section.opening h4 {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+section.opening span.selling-cost {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto auto 10px auto;
+    color: #b94a48;
+}
+
+section.opening span.buying-cost {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 14px;
+    margin: auto auto 10px auto;
+    color: #468847;
+}
+
+section.opening button.btn-alternative-yellow {
+    margin: auto auto 130px auto;
+}
+
+@media (max-width: 768px) {
+    section.opening button.btn-alternative-yellow {
+        margin: auto auto 50px auto;
+    }
+    section.opening h4.opening-title {
+        margin: 50px auto 0px auto;
+    }
+    section.opening .quick-login-email-container {
+        margin: 10px auto 50px auto;
+    }
+}
+
+@media (min-width: 992px) {
+    section.opening button.btn-alternative-yellow {
+        margin: auto auto 50px auto;
+    }
+    section.opening h4.opening-title {
+        margin: 50px auto 0px auto;
+    }
+    section.opening .quick-login-email-container {
+        margin: 10px auto 50px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    section.opening button.btn-alternative-yellow {
+        margin: auto auto 130px auto;
+    }
+    section.opening h4.opening-title {
+        margin: 130px auto 20px auto;
+    }
+}

@@ -1,0 +1,32 @@
+.page-content {
+    min-height: 500px;
+}
+
+.app-step-nav {
+    margin: 50px auto auto auto;
+}
+
+.info-container {
+    margin: 20px auto 20px auto;
+}
+
+.work-break {
+    word-break: break-all;
+    white-space: normal;
+}
+
+
+
+.btn-alert {
+    width: 60%;
+    margin: 20px auto auto auto;
+    width: 41.5%
+}
+
+@media (max-width: 768px) {
+
+    .btn-alert {
+        margin: auto auto 100px auto !important;
+        width: 100%;
+    }
+}

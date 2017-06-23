@@ -1,0 +1,10 @@
+/**Windows**/
+npm run build
+npm run html
+npm run script
+npm run style
+npm run resource
+
+/**Mac-Linux**/
+npm run build
+npm run ubuntu

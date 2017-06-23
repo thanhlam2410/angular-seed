@@ -1,0 +1,32 @@
+.app-step-nav {
+    margin: 50px auto auto auto;
+}
+
+.info-container {
+    margin: 20px auto 20px auto;
+}
+
+.walled-address-form .walled-address-qrcode {
+    width: 30%;
+    margin: 20px auto auto auto;
+}
+
+.walled-address-form .walled-address {
+    max-width: 500px;
+    margin: auto;
+}
+
+.payment-timer {
+    text-align: center;
+}
+
+.btn-cancel {
+    width: 20%
+}
+
+@media (max-width: 768px) {
+    .btn-cancel {
+        margin: auto auto 15px auto;
+        width: 100%
+    }
+}

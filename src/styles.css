@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Font definition
+   ========================================================================== */
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/fonts/OpenSans-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/fonts/OpenSans-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/fonts/OpenSans-Light.ttf);
+    font-weight: 200;
+}
+
+
+/* Button
+   ========================================================================== */
+
+.btn-primary {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #355679 !important;
+    border: 0px transparent;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #3a83b1 !important;
+}
+
+.btn-alternative-yellow:hover {
+    background-color: #fbcd7c;
+}
+
+.btn-alternative-yellow {
+    background-color: #EDB400;
+    color: #FFFFFF!important;
+    border: 1px solid #EDB400;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.btn-alternative-red:hover {
+    background-color: #d9534f;
+}
+
+.btn-alternative-red {
+    background-color: #d43f3a;
+    color: #FFFFFF!important;
+    border: 1px solid #d43f3a;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.btn-alternative-blue:hover {
+    background-color: #5cb85c;
+}
+
+.btn-alternative-blue {
+    background-color: #398439;
+    color: #FFFFFF!important;
+    border: 1px solid #398439;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 16px;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+    .btn-alternative-yellow {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .btn-primary {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+
+/* Textbox
+   ========================================================================== */
+
+.text-box {
+    height: 50px;
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/* Pagination
+   ========================================================================== */
+
+.pagination {
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.pagination>li>a {
+    color: #363636;
+}
+
+
+/* Body
+   ========================================================================== */
+
+body {
+    padding-top: 51px;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 91px;
+    }
+}
+
+
+/* Section Title
+   ========================================================================== */
+
+.section-title {
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    max-width: 800px;
+    margin: 50px auto 50px auto;
+    padding-bottom: 10px;
+    font-family: OpenSans;
+    font-weight: 200;
+    font-size: 36px;
+    color: #333333;
+}
+
+
+/* TextView Title Label
+   ========================================================================== */
+
+.text-box-title-label {
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 16px !important;
+    color: #333333 !important;
+}
+
+.info-title-label {
+    font-family: OpenSans;
+    font-weight: 500;
+    font-size: 16px !important;
+    color: #333333 !important;
+}
+
+
+/* Alert
+   ========================================================================== */
+
+.alert {
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/* Input group addon
+   ========================================================================== */
+
+span.input-group-addon {
+    font-family: OpenSans;
+    font-weight: 300;
+    font-size: 16px !important;
+    color: #333333 !important;
+}

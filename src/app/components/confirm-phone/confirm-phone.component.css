@@ -1,0 +1,37 @@
+.page-content {
+    min-height: 500px;
+}
+
+.notification-success {
+    max-width: 500px;
+    margin: 0px auto 30px auto;
+}
+
+.section-input .input-code-form {
+    max-width: 500px;
+    margin: 0px auto 30px auto;
+}
+
+.btn-confirm {
+    width: 45%;
+    float: left;
+}
+
+.btn-sms {
+    width: 45%;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .btn-confirm {
+        width: 100%;
+        margin-bottom: 15px;
+        float: none;
+    }
+
+    .btn-sms {
+        width: 100%;
+        margin-bottom: 15px;
+        float: none;
+    }
+}

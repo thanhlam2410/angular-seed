@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <section class="step-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="app-step-nav">
+                        <app-step-nav [items]="navItems"></app-step-nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.step-nav -->
+    <section class="payment-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info info-container">
+                        <p>Bạn đang mua <strong>0.77 DASH</strong> cho <strong>HaoLe</strong>. DASH khoá lại để đảm bảo cho
+                            giao dịch này. Vui lòng thanh toán rồi xác nhận dưới đây</p>
+                        <div class="work-break">
+                            <p>Sau khi giao dịch hoàn tất, DASH của bạn sẽ được chuyển vào: <strong>DVJKSFNDJSKNDJKDKJWELALVJSHFGKJNVDJNVJD</strong></p>
+                        </div>
+                    </div>
+                    <!-- /.info-container -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <button class="btn btn-lg btn-alternative btn-alternative-red btn-cancel">HUỶ BỎ GIAO DỊCH</button>
+                </div>
+
+                <div class="col-lg-6">
+                    <button class="btn btn-lg btn-darkblue btn-alternative-yellow btn-problem" (click)="onPaymentDoneButtonClicked()">TRANH CHẤP</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <button class="btn btn-lg btn-darkblue btn-alternative-blue btn-alert" (click)="onPaymentDoneButtonClicked()">(01:20) Triệu hồi minhnn</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- /.page-content -->
+
+<footer></footer>

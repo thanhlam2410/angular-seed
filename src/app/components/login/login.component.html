@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <section class="section-login" *ngIf="showLoginForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="section-title">Đăng nhập</h3>
+                    <form class="login-form" [formGroup]="loginForm">
+                        <div class="form-group">
+                            <label class="text-box-title-label">Email</label>
+                            <input type="text" class="form-control text-box" id="email" formControlName="email" required>
+                            <div class="alert alert-danger" *ngIf="formErrors.email">
+                                {{ formErrors.email }}
+                            </div>
+                        </div>
+                        <button class="btn continue-btn btn-alternative-yellow btn-full-width" (click)="onContinueButtonClicked(loginForm.value, loginForm)">TIẾP TỤC</button>
+                    </form>
+                    <!-- /.form-login-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section-login -->
+
+    <section class="section-login-successed" *ngIf="!showLoginForm">
+        <div class="container">
+            <div class="container>">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-success" role="alert">Chúng tôi đã gửi liên kết để đăng nhập vào <strong><span
+								class="user-email">{{userEmail}}</span></strong>. Bấm vào nút bên trong email là xong. Kiểm tra cả hộp thư rác nếu
+                            bạn không tìm thấy email trong hộp thư chính.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section-login-successed -->
+</div>
+<!-- /.page-content -->
+
+<footer></footer>
+<!---->

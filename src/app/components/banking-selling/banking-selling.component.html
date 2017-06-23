@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <section class="section-payment-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="section-title">Thông tin thanh toán</h3>
+                    <div class="form payment-info-form">
+                        <form>
+                            <div class="field form-group row">
+                                <label for="bankingName" class="col-sm-4 control-label info-title-label">Tên ngân hàng</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="bankingName" name="bankingName" class="form-control text-box" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field form-group row">
+                                <label for="bankingId" class="col-sm-4 control-label info-title-label">Số tài khoản</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="bankingId" name="bankingId" class="form-control text-box" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field form-group row">
+                                <label for="accountName" class="col-sm-4 control-label info-title-label">Tên tài khoản</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="accountName" name="accountName" class="form-control text-box" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <button class="btn btn-primary btn-continute" tabindex="16" type="submit" (click)="onButtonContinuteClick()">TIẾP TỤC</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.payment-info-form-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section-payment-info -->
+</div>
+<!-- /.page-content -->
+
+<footer></footer>

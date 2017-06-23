@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<app-nav-bar [user-name]="'HAOLE'"></app-nav-bar>
+
+<!-- Page Content -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="section-title">Khởi tạo giao dịch</h3>
+                <div class="alert alert-success notification-success" role="alert">
+                    <div class="notification-text">Mã xác thực đã được gửi tới số điện thoại của bạn.<br> Hãy nhập mã xác thực vào bên dưới để xác minh
+                        số điện thoại.</div>
+                </div>
+                <div class="section-input">
+                    <form class="input-code-form">
+                        <div class="form-group">
+                            <label class="text-box-title-label">Mã xác thực</label>
+                            <input type="email" class="form-control text-box">
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-confirm" (click)="onConfirmButtonClick()">XÁC THỰC</button>
+                        <button class="btn btn-lg btn-alternative-yellow btn-sms">Chưa nhận được SMS?</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.page-content -->
+
+<footer></footer>
