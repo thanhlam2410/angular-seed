@@ -7,7 +7,6 @@ import { BaseController } from './base.controller';
 
 @Injectable()
 export class NavigationController extends BaseController {
-
     constructor(
         private router: Router) {
         super(router);
@@ -45,6 +44,14 @@ export class NavigationController extends BaseController {
         this.navigateTo('completed-purchase', params);
     }
 
+    goToPaymentCompletedSellingPage(params?: any) {
+        this.navigateTo('completed-selling', params);
+    }
+
+    goToPaymentCompletedCanceled(params?: any) {
+        this.navigateTo('completed-canceled', params);
+    }
+
     goToTransferPurchasePage(params?: any) {
         this.navigateTo('transfer-purchase', params);
     }
@@ -64,6 +71,20 @@ export class NavigationController extends BaseController {
     goToPaymentSellingPage(params?: any) {
         this.navigateTo('payment-selling', params);
     }
-    
 
+    goToDashboardPage(params?: any) {
+        this.navigateTo('dashboard', params);
+    }
+
+    goToCreateAdPage(params?: any) {
+        this.navigateTo("create-ads", params);
+    }
+
+    goToWalletPage(params?: any) {
+        this.navigateTo("wallet", params);
+    }
+
+    goToQuickTradePage(params?: any) {
+        this.navigateTo("quick-trade", params);
+    }
 }
